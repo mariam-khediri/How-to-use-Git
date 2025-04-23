@@ -79,3 +79,34 @@ git push origin main
 ```
 
 ---
+
+### 🧹 Step-by-Step: Remove `.gitkeep` After Adding a Real File
+
+1. **Navigate to the folder**:
+   ```bash
+   cd folder1/subfolder11
+   ```
+
+2. **Delete the `.gitkeep` file**:
+   ```bash
+   rm .gitkeep
+   ```
+
+3. **Stage the deletion** for Git:
+   ```bash
+   git rm folder1/subfolder11/.gitkeep
+   ```
+
+4. **Commit the change**:
+   ```bash
+   git commit -m "Removed .gitkeep after adding real files"
+   ```
+
+5. **Push to GitHub**:
+   ```bash
+   git push origin main
+   ```
+
+---
+
+After this, the folder will still be tracked by Git (and visible on GitHub) **as long as it contains other files**. You’ve just cleaned it up by removing the placeholder.
