@@ -110,3 +110,33 @@ git push origin main
 ---
 
 After this, the folder will still be tracked by Git (and visible on GitHub) **as long as it contains other files**. You’ve just cleaned it up by removing the placeholder.
+
+---
+
+## ✏️ how to modify your repo on github directly from vs code when you don't have the folder locally
+
+### 🟢 SOLUTION 1 _ Clone directy from Github
+
+**🔹 Step 1 — Clone the repo properly **
+   ```bash
+   cd path to place the new folder
+   git clone https://github.com/.... (repo to clone).git
+   ```
+
+**🔹 Step 2 — Open in VS Code **
+   ```bash
+   cd folder name
+   code .
+   ```
+### 🟡 SOLUTION 2 _ Download the repo as zip file
+   ```bash
+   cd folder name
+   git init
+   git remote add origin (git repo path.git)
+   git add .
+   git commit -m "message"
+   git pull origin main --allow-unrelated-histories
+   ```
+
+
+
